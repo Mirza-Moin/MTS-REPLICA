@@ -1,0 +1,78 @@
+.roadmap-container{
+.roadmap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .roadmap-header{
+        display: flex;
+        align-items: center;
+        gap: 5rem;
+       margin-bottom: 4em;
+        width: 80%;
+        h1{
+            font-size: 3.5rem;
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+            flex: 1;
+           
+        }
+        p{
+            color: gray;
+            flex:1;
+            font-family: 'Source Sans Pro', sans-serif;
+ 
+        }
+
+    }
+}
+.carousel-container {
+    position:relative;
+    
+ .carousel {
+    
+    position:unset;
+    // .react-multi-carousel-track{
+    //     // .react-multi-carousel-item{
+    
+    //     // }
+        
+    // }
+    .react-multiple-carousel__arrow {
+        position:absolute;
+        top: -39px;
+        background-color: #ff7f00;
+        color: black;
+        padding: 0 3em;
+        
+        
+        &:hover{
+            background-color: white;
+            color: black;
+        }
+    }
+    .react-multiple-carousel__arrow::before{
+        color: black;
+    }
+    
+
+    
+}
+}
+}
+
+@media(max-width:1000px){
+    .roadmap-container{
+    .roadmap{
+        .roadmap-header{
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 0;
+       margin-bottom: 2em;
+     h1{
+        font-size: 2rem;
+     }
+        }
+    }
+}
+}

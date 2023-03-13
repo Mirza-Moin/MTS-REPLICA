@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Nunito&family=Roboto:wght@100;400;900&family=Source+Sans+Pro:wght@400;600;700&display=swap');
+
+/*
+font-family: 'Merriweather', serif;
+font-family: 'Nunito', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Source Sans Pro', sans-serif;
+*/
+
+/*colors for use
+white: #fefefe
+orange: #ff7f00 
+lightBlack: #1b1b1b 
+lightGray: #282828 */
+
+body{
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #1b1b1b ;
+
+}
+
+.home-container{
+    width: 100vw;
+.home{
+    
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    .home-component-container{
+        padding-top: 8em;
+    }
+    .header{
+       position: fixed;
+       width: 90%;
+       z-index: 1;
+        
+        .navbar {
+           
+            height: 70px;
+            border: 1px solid #ff7f00;
+            background-color: #1b1b1b;
+            border-radius: 50px;
+            margin-top: 2em;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 1em;
+            .logo{
+                cursor: pointer;
+                .logo-icon{
+                    font-size: 3rem;
+                }
+            }
+            .icons{
+                width: 17%;
+                display: flex;
+                justify-content: space-evenly;
+                .icon{
+                    // margin-left: 2rem;
+                    font-size: 2rem;
+                    cursor: pointer;
+                    &:hover{
+                        color: #ff7f00;
+                    }
+                }
+            }
+           
+            .list{
+                font-family: 'Source Sans Pro', sans-serif;
+                font-size: 1rem;
+                font-weight: 100;
+                ul{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    li{
+                        list-style: none;
+                        margin-left: 2rem;
+                        cursor: pointer;
+                        .active{
+                            color: #ff7f00;
+                        }
+                        a{
+                            text-decoration: none;
+                            color: white;
+                            cursor: pointer;
+                            &:hover{
+                                color: #ff7f00;
+                            }
+                        }
+                    }
+                }
+            }
+            .menu-icon{
+                
+                display: none;
+            }
+        }
+    }
+    section{
+        color: white;
+        margin-bottom: 100px;
+        
+    }
+    
+    .bootom-links{
+        .logo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .icon{
+                font-size: 10rem;
+                color: gray;
+                opacity: 41%;
+            }
+        }
+        .list{
+                margin: 4em 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            ul{
+                width: 70%;
+                display: flex;
+                justify-content: space-evenly;
+                flex-wrap: wrap;
+                gap: 3em;
+                align-items: center;
+                padding-left: 1em;
+                li{
+                    text-align: center;
+                    flex: 1;
+                    flex-shrink: 1;
+                    flex-grow: 1;
+                    list-style: none;
+                    &:hover{
+                        color: #ff7f00;
+                    }
+                }
+            }
+        }
+        .btn{
+           display: flex;
+           justify-content: center;
+           align-items: center;
+        }
+        }
+    
+}
+footer{
+    background-color: #ff7f00;
+    color: black;
+    font-size: 0.7rem;
+    letter-spacing: 0.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    p{
+        text-align: center;
+    }
+}
+}
+
+@media (max-width:310px){
+    
+    .bootom-links{
+       
+        .list{
+            ul{
+                padding: 0;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+}
+
+@media (max-width: 1073px) {
+    .navbar{
+       
+        .menu-icon{
+            display: block !important;
+            &:hover{
+                color: #ff7f00;
+                cursor: pointer;
+            }
+        }
+        .icons{
+            width: 40% !important;
+        }
+        .list.hidden{
+            display: none;
+        }
+        .show-side-menu-list{
+           
+            position: absolute;
+            top: 6em;
+            right: 2em;
+            
+            ul{
+                color: white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                padding: 0;
+                width: 150px;
+                // background-color: red;
+                li{
+                    list-style: none;
+                    border: 1px solid #ff7f00;
+                    border-radius: 50px;
+                    margin-bottom: .5em;
+                    padding: 10px 30px;
+                    width: 80%;
+                    cursor: pointer;
+                    text-align: center;
+                    background-color: #1b1b1b;
+                    .active{
+                        color: #ff7f00;
+                    }
+                    &:last-child{
+                       background-color: transparent;
+                        border: none;
+                        background-color: #ff7f00;
+                        :last-child{
+                            border: none;
+                            padding: 5px 20px;
+                            font-size: 1rem;
+                        }
+                    }
+                    &:hover{
+                        color:#ff7f00
+                    }
+                    a{
+                        text-decoration: none;
+                        color: white;
+                        cursor: pointer;
+                        &:hover{
+                        color:#ff7f00
+
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+}
+@media(max-width:364px){
+.bootom-links{
+    .list{
+        ul{
+            flex-direction: column;
+            margin-right: 1em;
+            li{
+                // text-align: left;
+            }
+        }
+    }
+}
+}

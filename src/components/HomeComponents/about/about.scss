@@ -1,0 +1,140 @@
+.about{ 
+    // border: 1px solid red;
+    display: flex;
+    align-items: flex-start;
+    gap: 5em;
+    .left{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap:1.5em 1.5em;
+        .box{
+            width: 250px;
+            height: 250px;
+            background-color: #282828;
+            border-radius: 20px;
+        }
+    }
+    .right{
+        padding-right: 3em;
+        h1{
+            font-family: 'Roboto', sans-serif;
+            font-weight: 900;
+            font-size: 4rem;
+            margin: 0;
+        }
+        p{
+            font-family: 'Source Sans Pro', sans-serif;
+            margin-top: 1.5em; 
+            line-height: 1.5em;
+            font-size: 1.1rem;
+            color: gray;     
+        }
+        :last-child{
+            margin-top: 2em;
+        }
+    }
+}
+
+@media(max-width:1161px){
+    .about{
+        .left{
+            .box{
+                width: 200px;
+                height: 200px;
+            }
+        }
+        .right{
+            padding-right: 1em;
+            h1{
+                font-size: 2rem;
+            }
+            p{
+                margin-top: 1em;
+                line-height: 1.3em;
+            }
+        }
+    }
+}
+@media(max-width:890px){
+    .about{
+        flex-direction: column;
+        align-items: center;
+        .left{
+            // border: 1px solid red;
+            .box{
+                height: 400px;
+                width: 400px;
+            }
+        }
+        .ritht{
+            h1{
+
+            }
+            p{
+
+            }
+        }
+        
+    }
+}
+@media(max-width:860px){
+    .about{
+        .left{
+            .box{
+                height: 350px;
+                width: 350px;
+            }
+        }
+    }
+}
+@media(max-width:773px){
+    .about{
+        .left{
+            .box{
+                height: 310px;
+                width: 310px;
+            }
+        }
+    }
+}
+@media(max-width:680px){
+    .about{
+        .left{
+            .box{
+                height: 280px;
+                width: 280px;
+            }
+        }
+    }
+}
+@media(max-width:651px){
+    .about{
+        .left{
+            // gap: 2em 2em;
+            .box{
+                height: 200px;
+                width: 200px;
+            }
+        }
+    }
+}
+@media(max-width:440px){
+    .about{
+        .left{
+            .box{
+                height: 150px;
+                width: 150px;
+            }
+        }
+    }
+}
+@media(max-width:330px){
+    .about{
+        .left{
+            .box{
+                height: 100px;
+                width: 100px;
+            }
+        }
+    }
+}

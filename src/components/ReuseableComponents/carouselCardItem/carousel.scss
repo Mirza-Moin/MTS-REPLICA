@@ -1,0 +1,29 @@
+.carousel-card-container{
+    background-color: #282828;
+    border-radius: 40px;
+    padding: 1em;
+    margin: 1em;
+    
+    .title{
+        font-family: 'Source Sans Pro', sans-serif;
+        color: #ff7f00;
+        font-weight: 900;
+        .title-main{
+            margin:0;
+            font-size: 2rem;
+                span{
+                    color: white;
+                }  
+        }
+        .title-sub{
+
+        }
+    }
+    .description{
+        p{
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size: .9rem;
+            letter-spacing: .2;
+        }
+    }
+}
